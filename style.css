@@ -6,7 +6,7 @@ font-family: 'Roboto', sans-serif
     
 }
 .top-container{
-    background-image: url("https://s.imgur.com/desktop-assets/desktop-assets/homebg.e52b5cdf24f83bcd55f9f1318855f2ef.png");
+    /* background-image: url("https://s.imgur.com/desktop-assets/desktop-assets/homebg.e52b5cdf24f83bcd55f9f1318855f2ef.png"); */
 } 
 .navbar{
     display:grid;
@@ -63,4 +63,22 @@ font-family: 'Roboto', sans-serif
     /* margin:0px; */
     font-size: 1.4rem;
     color:#AFD8EB;
+}
+.tags{
+    width:80%;
+    margin: auto;
+}
+.tags>span{
+    margin-left:1rem;
+}
+.tags-cards{
+    margin:1rem;
+    display: flex;
+    justify-content: space-around;
+}
+.tag-card{
+    text-align: center;
+    background-color:#27616E;
+    border-radius:5px;
+    color:white;
 }

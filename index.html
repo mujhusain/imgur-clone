@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&family=Roboto:wght@500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
 </head>
@@ -15,7 +16,7 @@
 <body>
     <div class="main-container">
         <div class="top-container">
-        <navbar class="navbar">
+            <navbar class="navbar">
                 <div class="navbar icons">
                     <div class="logo center">
                         <a href="">
@@ -30,16 +31,15 @@
                     <div></div>
                     <div class="search-input center">
                         <input type="text" placeholder="Images, #tags, @users oh may!" name="search">
-                        <i class="search-icon"><img src="./assets/icons/svgexport-2.svg"
-                                    alt=""></i>
-                                   
+                        <i class="search-icon"><img src="./assets/icons/svgexport-2.svg" alt=""></i>
+
                     </div>
                     <div class="leaderbord center">
                         <span>
                             <img src="./assets/icons/Comment Leaderboard.svg">
                         </span>
                     </div>
-                        <a href="" class="ad-free wh-txt voilet btn center">
+                    <a href="" class="ad-free wh-txt voilet btn center">
                         <span>Go Ad-free</span>
                     </a>
                     <a href="" class="sign-in wh-txt center">
@@ -56,13 +56,18 @@
                 </p>
             </div>
             <div class="tags">
-                <p>EXPLORE TAGS</p>
+                <span>EXPLORE TAGS</span>
                 <div class="tags-cards">
-                    
+
                 </div>
             </div>
         </div>
-        </div>
+    </div>
 </body>
 
 </html>
+<script type="module">
+    import { tagcard } from "./components/tagcard.js"
+    let color = ["red", "green", "blue", "pink", "teal"]
+    document.getElementsByClassName("tags-cards")[0].innerHTML += color.map((a, i) => tagcard(`Tag No: ${i}`, a))
+</script>
