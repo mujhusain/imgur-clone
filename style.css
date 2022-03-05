@@ -1,0 +1,66 @@
+body{
+    box-sizing: border-box; 
+    padding: 0px;
+    margin: 0px; 
+font-family: 'Roboto', sans-serif
+    
+}
+.top-container{
+    background-image: url("https://s.imgur.com/desktop-assets/desktop-assets/homebg.e52b5cdf24f83bcd55f9f1318855f2ef.png");
+} 
+.navbar{
+    display:grid;
+    padding: 0.4rem;
+    grid-template-columns: 8vw 9vw 4vw 49vw 5vw 7vw 7vw 9vw;
+}
+.search-input{
+    width: 85%;
+    margin-left:auto;
+}
+.search-input>input{
+    width: 100%;
+    height:32px;
+    border-radius: 5px;
+    border: 1px solid #25135c;
+    outline: none;
+    background-color:#454469;
+    padding-left:10px;
+    font-size:1rem;
+    font-weight:bold;
+    color: white;
+}
+.search-icon{
+    position: relative;
+    left: -6%;
+    top:2px;
+}
+.voilet{
+    background-color: #6533F9;
+}
+.green{
+    background-color: #1bb76e;
+}
+.wh-txt{
+    color: #fff;
+}
+.btn{
+    font-size: 1rem;
+    box-shadow: 0 6px 10px 0 rgb(27 28 30 / 31%);
+    border-radius: 0.2rem;
+    margin: 2px;
+}
+.center{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+/* /////after navbar */
+.after-nav-div{
+    /* border: 1px solid white; */
+    width: 100%;
+}
+.after-nav-div>p{
+    /* margin:0px; */
+    font-size: 1.4rem;
+    color:#AFD8EB;
+}
