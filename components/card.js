@@ -38,7 +38,6 @@ export function imgcard(url="#", type){
             return `<div class="imgcard">
                         <video autoplay="true" width="250">
                             <source src=${url} type="video/mp4">
-                            <source src=${url} type="video/webm">
                         </video>
                             <div class="img-title">
                             <p>Hi this is img title</p>
