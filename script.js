@@ -26,11 +26,10 @@ function showImages(list) {
   console.log("List", list);
   list = list.filter((a) => a.images != undefined);
   list.forEach((a, i) => {
-    // let url = a.images[0].link;
-    // let type = a.images[0].type;
-    // let height = a.images[0].height/3;
+  
     let {title,ups, downs, views}=a
     let {link, type, height}=a.images[0]
-    document.getElementsByClassName("content")[0].innerHTML += imgcard(title,link, type,height/3,ups, downs, views);
+    height =height/5
+    document.getElementsByClassName("content")[0].innerHTML += imgcard(title,link, type,height,ups, downs, views);
   });
 }

@@ -88,14 +88,19 @@ background-color: #2E3035;
 .content{
     display:flex;
     flex-wrap: wrap;
-    height: 1000vh;
+    height: 600vh;
     width: 80%;
+    overflow: hidden;
     flex-direction: column;
 }
 .imgcard{
-    width: 18vw;
-    margin:8px auto;
+    max-width: 18.5vw;
+    margin:8px;
+    border-radius:4px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.imgcard:hover{
+background-color:rgb(92, 91, 91);
 }
 .imgcard>.img-title{
     padding:0 10px 10px 10px;
@@ -106,4 +111,7 @@ background-color: #2E3035;
     max-height: 37px;
     line-height: 18px;
     overflow: hidden;
+}
+.img-title>span{
+margin:0 8%;
 }

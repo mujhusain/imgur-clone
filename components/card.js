@@ -28,9 +28,9 @@ export function imgcard(title,link, type,height,ups, downs, views){
                         <img src="${link}" width="100%" height=${height}alt="">
                             <div class="img-title">
                             <p>${title}</p>
-                            <span>${ups}</span>
-                            <span>${downs}</span>
-                            <span>${views}</span>
+                            <span><i class="fa-duotone fa-up"></i>${ups}</span>
+                            <span><i class="fa-duotone fa-down"></i>${downs}</span>
+                            <span><i class="fa-duotone fa-eye">hare</i>${views}</span>
                         </div>
                     </div>`
                     break;
