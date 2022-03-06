@@ -68,16 +68,17 @@ background-color: #2E3035;
     color:#AFD8EB;
 }
 .tags{
-    width:80%;
+    width:90%;
     margin: auto;
 }
 .tags>span{
     margin-left:1rem;
+    color:#fff;
 }
 .tags-cards{
     margin:1rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .tag-card{
     text-align: center;
@@ -90,12 +91,13 @@ background-color: #2E3035;
     display:flex;
     flex-wrap: wrap;
     height: 600vh;
-    width: 80%;
+    width: 75%;
+    margin:auto;
     overflow: hidden;
     flex-direction: column;
 }
 .imgcard{
-    max-width: 18.5vw;
+    max-width: 17.3vw;
     margin:8px;
     border-radius:4px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;

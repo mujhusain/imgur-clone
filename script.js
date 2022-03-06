@@ -14,7 +14,7 @@ fetch(`https://api.imgur.com/3/gallery/top`, requestOptions)
   .then((res) => (showImages(res.data)))
   .catch((error) => console.log("error", error));
 
-let color = ["red", "green", "blue", "pink", "teal"];
+let color = ["red", "green", "blue", "pink", "teal", "green"];
 color.forEach((a, i) => {
   document.getElementsByClassName("tags-cards")[0].innerHTML += tagcard(
     `Tag No: ${i}`,
