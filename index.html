@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&family=Roboto:wght@500&display=swap"
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script  type="module" src="./script.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&family=Roboto:wght@500&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
+        <link rel="stylesheet" href="./style.css" />
+        <title>Document</title>
 </head>
 
 <body>
@@ -58,16 +59,22 @@
             <div class="tags">
                 <span>EXPLORE TAGS</span>
                 <div class="tags-cards">
-
+                <!-- Tags card will be injected hare -->
                 </div>
+            </div>
+            <div class="content tags">
+                <!-- <div class="imgcard">
+                    <img src="https://via.placeholder.com/200X200" width="200px" height=""alt="">
+                    <div class="img-title">
+                        <p>Hi this is img title</p>
+                        <span>upvotes</span>
+                        <span>downvotes</span>
+                        <span>views</span>
+                    </div>
+                </div> -->
             </div>
         </div>
     </div>
 </body>
 
 </html>
-<script type="module">
-    import { tagcard } from "./components/tagcard.js"
-    let color = ["red", "green", "blue", "pink", "teal"]
-    document.getElementsByClassName("tags-cards")[0].innerHTML += color.map((a, i) => tagcard(`Tag No: ${i}`, a))
-</script>

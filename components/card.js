@@ -9,3 +9,16 @@ export function tagcard(tagname, color){
                         </div>
                     </div>`
 }
+
+export function imgcard(url="#"){
+
+    return `<div class="imgcard">
+    <img src="${url}" width="200px" height=""alt="">
+    <div class="img-title">
+        <p>Hi this is img title</p>
+        <span>upvotes</span>
+        <span>downvotes</span>
+        <span>views</span>
+    </div>
+</div>`
+}

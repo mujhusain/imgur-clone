@@ -56,7 +56,6 @@ font-family: 'Roboto', sans-serif
 }
 /* /////after navbar */
 .after-nav-div{
-    /* border: 1px solid white; */
     width: 100%;
 }
 .after-nav-div>p{
@@ -79,6 +78,19 @@ font-family: 'Roboto', sans-serif
 .tag-card{
     text-align: center;
     background-color:#27616E;
-    border-radius:5px;
+    border-radius:5 px;
     color:white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.content{
+    border: 1px solid #021418;
+    display:flex;
+    flex-wrap: wrap;
+}
+.imgcard{
+    /* border: 1px solid #021418; */
+    width:23%;
+    margin: 8px auto;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
