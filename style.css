@@ -9,12 +9,13 @@ background-color: #2E3035;
 .top-container{
     background-image: url("https://s.imgur.com/desktop-assets/desktop-assets/homebg.e52b5cdf24f83bcd55f9f1318855f2ef.png");
     height: 400px;
+    border:solid 1px transparent;
     background-repeat: no-repeat;
 } 
 .navbar{
     display:grid;
-    padding:0.7rem 0px;
-    grid-template-columns: 8vw 9vw 4vw 49vw 5vw 7vw 7vw 10vw;
+    padding:0.7rem 0;
+    grid-template-columns: 9vw 9vw 4vw 49vw 5vw 7vw 7vw 9vw;
     position:fixed;
     top: 0;
     z-index: 1;
@@ -65,6 +66,7 @@ background-color: #2E3035;
 /* /////after navbar */
 .after-nav-div{
     width: 100%;
+    margin-top: 60px;
 }
 .after-nav-div>p{
     font-size: 1.4rem;
