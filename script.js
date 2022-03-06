@@ -1,5 +1,11 @@
 import { imgcard, tagcard } from "./components/card.js";
 
+
+// document.getElementsByTagName("input").addEventListener("onpresss", )
+document.getElementById("search-btn").addEventListener("click",getData)
+
+getData()
+function getData(search = "top"){
 var clientId = "fbac8857f6f0770";
 var requestOptions = {
   method: "GET",
@@ -8,11 +14,11 @@ var requestOptions = {
   },
   redirect: "follow",
 };
-var subreddit = "angry";
-fetch(`https://api.imgur.com/3/gallery/top`, requestOptions)
+fetch(`https://api.imgur.com/3/gallery/${search}`, requestOptions)
   .then((response) => response.json())
   .then((res) => (showImages(res.data)))
   .catch((error) => console.log("error", error));
+}
 
 let color = ["red", "green", "blue", "pink", "teal", "green"];
 color.forEach((a, i) => {
@@ -21,6 +27,7 @@ color.forEach((a, i) => {
     a
   );
 });
+
 
 function showImages(list) {
   console.log("List", list);
