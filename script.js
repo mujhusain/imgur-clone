@@ -28,6 +28,7 @@ function showImages(list) {
   list.forEach((a, i) => {
     let url = a.images[0].link;
     let type = a.images[0].type;
-    document.getElementsByClassName("content")[0].innerHTML += imgcard(url, type);
+    let height = a.images[0].height/3;
+    document.getElementsByClassName("content")[0].innerHTML += imgcard(url, type,height);
   });
 }

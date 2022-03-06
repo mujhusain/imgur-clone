@@ -2,11 +2,14 @@ body{
     box-sizing: border-box; 
     padding: 0px;
     margin: 0px; 
-font-family: 'Roboto', sans-serif
+font-family: 'Roboto', sans-serif;
+background-color: #2E3035;
     
 }
 .top-container{
-    /* background-image: url("https://s.imgur.com/desktop-assets/desktop-assets/homebg.e52b5cdf24f83bcd55f9f1318855f2ef.png"); */
+    background-image: url("https://s.imgur.com/desktop-assets/desktop-assets/homebg.e52b5cdf24f83bcd55f9f1318855f2ef.png");
+    height: 400px;
+    background-repeat: no-repeat;
 } 
 .navbar{
     display:grid;
@@ -83,14 +86,17 @@ font-family: 'Roboto', sans-serif
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 .content{
-    border: 1px solid #021418;
     display:flex;
     flex-wrap: wrap;
+    height: 1000vh;
+    width: 80%;
+    flex-direction: column;
 }
 .imgcard{
-    /* border: 1px solid #021418; */
     width:23%;
-    margin: 8px auto;
-    padding: 5px;
+    margin:8px auto;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.imgcard>.img-title{
+    padding-left: 10px;
 }

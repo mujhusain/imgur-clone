@@ -10,11 +10,11 @@ export function tagcard(tagname, color){
                     </div>`
 }
 
-export function imgcard(url="#", type){
+export function imgcard(url="#", type, height){
     switch(type){
         case "image/png":
             return `<div class="imgcard">
-                        <img src="${url}" width="200px" height=""alt="">
+                        <img src="${url}" width="200px" height=${height} alt="">
                             <div class="img-title">
                             <p>Hi this is img title</p>
                             <span>upvotes</span>
@@ -25,7 +25,7 @@ export function imgcard(url="#", type){
                     break;
         case "image/jpg":
             return `<div class="imgcard">
-                        <img src="${url}" width="200px" height=""alt="">
+                        <img src="${url}" width="200px" height=${height}alt="">
                             <div class="img-title">
                             <p>Hi this is img title</p>
                             <span>upvotes</span>
@@ -36,7 +36,7 @@ export function imgcard(url="#", type){
                     break;
         case "video/mp4":
             return `<div class="imgcard">
-                        <video controls width="250">
+                        <video controls height=${height} width="250">
                             <source src=${url} type="video/mp4">
                         </video>
                             <div class="img-title">
@@ -49,7 +49,7 @@ export function imgcard(url="#", type){
                     break;
         default:
             return `<div class="imgcard">
-                        <img src="${url}" width="200px" height=""alt="">
+                        <img src="${url}" width="200px" height=${height} alt="">
                             <div class="img-title">
                             <p>Hi this is img title</p>
                             <span>upvotes</span>
