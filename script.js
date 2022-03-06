@@ -27,6 +27,7 @@ function showImages(list) {
   list = list.filter((a) => a.images != undefined);
   list.forEach((a, i) => {
     let url = a.images[0].link;
-    document.getElementsByClassName("content")[0].innerHTML += imgcard(url);
+    let type = a.images[0].type;
+    document.getElementsByClassName("content")[0].innerHTML += imgcard(url, type);
   });
 }
