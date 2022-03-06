@@ -36,7 +36,7 @@ export function imgcard(url="#", type){
                     break;
         case "video/mp4":
             return `<div class="imgcard">
-                        <video autoplay="true" width="250">
+                        <video controls width="250">
                             <source src=${url} type="video/mp4">
                         </video>
                             <div class="img-title">
