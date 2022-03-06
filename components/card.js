@@ -10,51 +10,51 @@ export function tagcard(tagname, color){
                     </div>`
 }
 
-export function imgcard(url="#", type, height){
+export function imgcard(title,link, type,height,ups, downs, views){
     switch(type){
         case "image/png":
             return `<div class="imgcard">
-                        <img src="${url}" width="200px" height=${height} alt="">
+                        <img src="${link}" width="100%" height=${height} alt="">
                             <div class="img-title">
-                            <p>Hi this is img title</p>
-                            <span>upvotes</span>
-                            <span>downvotes</span>
-                            <span>views</span>
+                            <p>${title}</p>
+                            <span>${ups}</span>
+                            <span>${downs}</span>
+                            <span>${views}</span>
                         </div>
                     </div>`
                     break;
         case "image/jpg":
             return `<div class="imgcard">
-                        <img src="${url}" width="200px" height=${height}alt="">
+                        <img src="${link}" width="100%" height=${height}alt="">
                             <div class="img-title">
-                            <p>Hi this is img title</p>
-                            <span>upvotes</span>
-                            <span>downvotes</span>
-                            <span>views</span>
+                            <p>${title}</p>
+                            <span>${ups}</span>
+                            <span>${downs}</span>
+                            <span>${views}</span>
                         </div>
                     </div>`
                     break;
         case "video/mp4":
             return `<div class="imgcard">
-                        <video controls height=${height} width="250">
-                            <source src=${url} type="video/mp4">
+                        <video controls height=${height} width="100%">
+                            <source src=${link} type="video/mp4">
                         </video>
                             <div class="img-title">
-                            <p>Hi this is img title</p>
-                            <span>upvotes</span>
-                            <span>downvotes</span>
-                            <span>views</span>
+                            <p>${title}</p>
+                            <span>${ups}</span>
+                            <span>${downs}</span>
+                            <span>${views}</span>
                         </div>
                     </div>`
                     break;
         default:
             return `<div class="imgcard">
-                        <img src="${url}" width="200px" height=${height} alt="">
+                        <img src="${link}" width="100%" height=${height} alt="">
                             <div class="img-title">
-                            <p>Hi this is img title</p>
-                            <span>upvotes</span>
-                            <span>downvotes</span>
-                            <span>views</span>
+                            <p>${title}</p>
+                            <span>${ups}</span>
+                            <span>${downs}</span>
+                            <span>${views}</span>
                         </div>
                     </div>`
     }   

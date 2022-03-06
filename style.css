@@ -93,10 +93,17 @@ background-color: #2E3035;
     flex-direction: column;
 }
 .imgcard{
-    width:23%;
+    width: 18vw;
     margin:8px auto;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 .imgcard>.img-title{
-    padding-left: 10px;
+    padding:0 10px 10px 10px;
+    color: #fff;
+    font-size: 0.85rem;
+}
+.img-title>p{
+    max-height: 37px;
+    line-height: 18px;
+    overflow: hidden;
 }
