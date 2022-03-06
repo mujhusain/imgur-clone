@@ -1,8 +1,10 @@
 import { imgcard, tagcard } from "./components/card.js";
 
 
-// document.getElementsByTagName("input").addEventListener("onpresss", )
-document.getElementById("search-btn").addEventListener("click",getData)
+document.getElementById("search-btn").addEventListener("click",function(){
+  let search=document.getElementById('search').value;
+  getData(search)
+})
 
 getData()
 function getData(search = "top"){
