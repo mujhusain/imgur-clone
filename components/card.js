@@ -1,11 +1,11 @@
-export function tagcard(tagname, color){
+export function tagcard(tagname, color, posts){
     return `
     <div class="tag-card">
-                        <img src="https://via.placeholder.com/180X70" alt="">
+                        <img src="https://i.imgur.com/1fDftsZ_d.jpg?maxwidth=800&shape=thumb&fidelity=high" width="180px" height="70px"alt="">
                         <div class="tag-name" style="background-color: ${color}">
-                            <span>${tagname}</span>
+                            <span id="tagname">${tagname}</span>
                             <br>
-                            <span>tsgname : views</span>
+                            <span id="postcount">${posts} Posts</span>
                         </div>
                     </div>`
 }
