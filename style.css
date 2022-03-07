@@ -127,3 +127,11 @@ background-color:rgb(92, 91, 91);
 .img-title>span{
 margin:0 8%;
 }
+/* ///post control */
+.post-control{
+    width:74%;
+    margin:auto;
+    height:2rem;
+    display:flex;
+    justify-content:space-between;
+}
